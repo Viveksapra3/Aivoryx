@@ -1,0 +1,16 @@
+﻿assets\images\apple-touch-icon.png
+assets\images\avatar-dima.png
+assets\images\favicon.png
+assets\images\og-preview.jpg
+assets\images\project-autoflow.jpg
+assets\images\project-brandforge.jpg
+assets\images\project-chatpilot.jpg
+assets\images\project-neurocrm.jpg
+assets\images\apple-touch-icon.png
+assets\images\avatar-dima.png
+assets\images\favicon.png
+assets\images\og-preview.jpg
+assets\images\project-autoflow.jpg
+assets\images\project-brandforge.jpg
+assets\images\project-chatpilot.jpg
+assets\images\project-neurocrm.jpg
