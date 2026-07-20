@@ -1771,17 +1771,17 @@
                      SECTION 2: FEATURED WORK — REDESIGNED
                      Premium Project Explorer with category filters
                 ==================================================== -->
-        <section data-animate="fade-up" class="fw-section" id="featured-work" aria-label="Featured Work">
+        <section data-animate="fade-up" class="fw-section"  aria-label="Featured Work">
 
             <div class="fw-inner">
 
                 <!-- ── Section header ──────────────────────── -->
-                <div class="fw-header">
+                <div id="featured-work" class="fw-header">
                     <div class="fw-header__left">
-                        <div class="fw-eyebrow">
+                        <!-- <div class="fw-eyebrow">
                             <span class="fw-eyebrow__dot"></span>
                             Selected Work
-                        </div>
+                        </div> -->
                         <h2 class="fw-title">
                             Products we've
                             <br />shipped.
@@ -1803,12 +1803,12 @@
                     <button class="fw-filter" data-filter="website" role="tab" aria-selected="false"
                         id="fw-tab-website">
                         Websites
-                        <span class="fw-filter__count" id="fw-count-website">4</span>
+                        <span class="fw-filter__count" id="fw-count-website">6</span>
                     </button>
                     <button class="fw-filter" data-filter="software" role="tab" aria-selected="false"
                         id="fw-tab-software">
                         Business Software
-                        <span class="fw-filter__count" id="fw-count-software">4</span>
+                        <span class="fw-filter__count" id="fw-count-software">2</span>
                     </button>
 
                     <!-- Sub-category pills (shown contextually) -->
@@ -1818,10 +1818,10 @@
                         <button class="fw-subcat fw-subcat--website" data-subcat="cafe">Cafés</button>
                         <button class="fw-subcat fw-subcat--website" data-subcat="gym">Gyms</button>
                         <button class="fw-subcat fw-subcat--website" data-subcat="local">Local Business</button>
-                        <button class="fw-subcat fw-subcat--software" data-subcat="inventory">Inventory</button>
-                        <button class="fw-subcat fw-subcat--software" data-subcat="emr">Intense Rigour</button>
-                        <button class="fw-subcat fw-subcat--software" data-subcat="orders">Order Mgmt</button>
-                        <button class="fw-subcat fw-subcat--software" data-subcat="dashboard">Dashboards</button>
+                        <button class="fw-subcat fw-subcat--software" data-subcat="inventory">ERP</button>
+                        <button class="fw-subcat fw-subcat--software" data-subcat="education">Education</button>
+                        <!-- <button class="fw-subcat fw-subcat--software" data-subcat="orders">Order Mgmt</button> -->
+                        <!-- <button class="fw-subcat fw-subcat--software" data-subcat="dashboard">Dashboards</button> -->
                     </div>
                 </div>
 
@@ -1829,14 +1829,14 @@
                 <div class="fw-grid" id="fw-grid" role="tabpanel">
 
                     <!-- PROJECT 1: Restaurant (website/restaurant) -->
-                    <article class="fw-card" data-category="website" data-subcategory="Wine Shop" data-index="0">
+                    <article class="fw-card" data-category="website" data-subcategory="local" data-index="0" onclick="window.open('https://gtownwines.com', '_blank')">
                         <div class="fw-card__visual">
                             <div class="fw-card__browser">
                                 <div class="fw-card__browser-bar">
                                     <span class="fw-dot fw-dot--r"></span>
                                     <span class="fw-dot fw-dot--y"></span>
                                     <span class="fw-dot fw-dot--g"></span>
-                                    <div class="fw-card__url">elora-dining.com</div>
+                                    <div class="fw-card__url">Gtownwines.com</div>
                                 </div>
                                 <div class="fw-card__img-wrap">
                                     <img src="assets/images/1.jpeg" alt="G Town Wines"
@@ -1846,10 +1846,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="fw-card__outcome-badge">
+                            <!-- <div class="fw-card__outcome-badge">
                                 <span class="fw-outcome__icon">↑</span>
                                 <span>+340% online reservations</span>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="fw-card__info">
                             <div class="fw-card__meta-top">
@@ -1877,167 +1877,16 @@
                         </div>
                     </article>
 
-                    <!-- PROJECT 2: Gym (website/gym) -->
-                    <article class="fw-card" data-category="website" data-subcategory="Cafe & Restaurant" data-index="1">
-                        <div class="fw-card__visual">
-                            <div class="fw-card__browser">
-                                <div class="fw-card__browser-bar">
-                                    <span class="fw-dot fw-dot--r"></span>
-                                    <span class="fw-dot fw-dot--y"></span>
-                                    <span class="fw-dot fw-dot--g"></span>
-                                    <div class="fw-card__url">Ishkiya.fit</div>
-                                </div>
-                                <div class="fw-card__img-wrap">
-                                    <img src="assets/images/2.jpeg" alt="Ishikiya" loading="lazy"
-                                        class="fw-card__img" />
-                                    <div class="fw-card__img-overlay">
-                                        <span class="fw-card__view-label">View live site ↗</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="fw-card__outcome-badge">
-                                <span class="fw-outcome__icon">↑</span>
-                                <span>2.8× membership sign-ups</span>
-                            </div>
-                        </div>
-                        <div class="fw-card__info">
-                            <div class="fw-card__meta-top">
-                                <span class="fw-card__cat-pill fw-card__cat-pill--website">Cafe & Restaurant</span>
-                                <span class="fw-card__year">2025</span>
-                            </div>
-                            <h3 class="fw-card__title">Ishkiya</h3>
-                            <p class="fw-card__summary"></p>
-                            <div class="fw-card__tech-row">
-                                <span class="fw-tech">Next.js</span>
-                                <span class="fw-tech">GSAP</span>
-                                <span class="fw-tech">Calendly API</span>
-                            </div>
-                            <div class="fw-card__outcome">
-                                <div class="fw-outcome__label">Key result</div>
-                                <div class="fw-outcome__value">
-                                </div>
-                            </div>
-                            <a href="https://Ishkiya.org" class="fw-card__cta" aria-label="View Ishkiya case study">
-                                View Website
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2.5" aria-hidden="true">
-                                    <path d="M5 12h14M12 5l7 7-7 7" />
-                                </svg>
-                            </a>
-                        </div>
-                    </article>
-
-                    <!-- PROJECT 3: Local Business / SkyHall Event Venue (website/local) -->
-                    <article class="fw-card" data-category="website" data-subcategory="Cafe & Restaurant" data-index="2">
-                        <div class="fw-card__visual">
-                            <div class="fw-card__browser">
-                                <div class="fw-card__browser-bar">
-                                    <span class="fw-dot fw-dot--r"></span>
-                                    <span class="fw-dot fw-dot--y"></span>
-                                    <span class="fw-dot fw-dot--g"></span>
-                                    <div class="fw-card__url">skyhall-events.com</div>
-                                </div>
-                                <div class="fw-card__img-wrap">
-                                    <img src="assets/images/5.jpeg" alt="Kake Di Hatti venue website"
-                                        loading="lazy" class="fw-card__img" />
-                                    <div class="fw-card__img-overlay">
-                                        <span class="fw-card__view-label">View live site ↗</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="fw-card__outcome-badge">
-                                <span class="fw-outcome__icon">↑</span>
-                                <span>+180% venue inquiries</span>
-                            </div>
-                        </div>
-                        <div class="fw-card__info">
-                            <div class="fw-card__meta-top">
-                                <span class="fw-card__cat-pill fw-card__cat-pill--website">Cafe & Restaurant</span>
-                                <span class="fw-card__year">2024</span>
-                            </div>
-                            <h3 class="fw-card__title">Kake Di Hatti</h3>
-                            <p class="fw-card__summary"></p>
-                            <div class="fw-card__tech-row">
-                                <span class="fw-tech">Webflow</span>
-                                <span class="fw-tech">Lottie</span>
-                                <span class="fw-tech">HubSpot CRM</span>
-                            </div>
-                            <div class="fw-card__outcome">
-                                <div class="fw-outcome__label">Key result</div>
-                                <div class="fw-outcome__value">
-                                    </div>
-                            </div>
-                            <a href="https://kakedihatti.com/" class="fw-card__cta" aria-label="View Kake Di Hatti case study">
-                                View Case Study
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2.5" aria-hidden="true">
-                                    <path d="M5 12h14M12 5l7 7-7 7" />
-                                </svg>
-                            </a>
-                        </div>
-                    </article>
-
-                    <!-- PROJECT 4: Café (website/cafe) -->
-                    <article class="fw-card" data-category="website" data-subcategory="Education" data-index="3">
-                        <div class="fw-card__visual">
-                            <div class="fw-card__browser">
-                                <div class="fw-card__browser-bar">
-                                    <span class="fw-dot fw-dot--r"></span>
-                                    <span class="fw-dot fw-dot--y"></span>
-                                    <span class="fw-dot fw-dot--g"></span>
-                                    <div class="fw-card__url">svitlo-cafe.com</div>
-                                </div>
-                                <div class="fw-card__img-wrap">
-                                    <img src="assets/images/6.jpeg" alt="ProfessorAI brand website"
-                                        loading="lazy" class="fw-card__img" />
-                                    <div class="fw-card__img-overlay">
-                                        <span class="fw-card__view-label">View live site ↗</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="fw-card__outcome-badge">
-                                <span class="fw-outcome__icon">↑</span>
-                                <span>+210% foot traffic from Google</span>
-                            </div>
-                        </div>
-                        <div class="fw-card__info">
-                            <div class="fw-card__meta-top">
-                                <span class="fw-card__cat-pill fw-card__cat-pill--website">Education</span>
-                                <span class="fw-card__year">2024</span>
-                            </div>
-                            <h3 class="fw-card__title">ProfessorAI</h3>
-                            <p class="fw-card__summary">
-                                </p>
-                            <div class="fw-card__tech-row">
-                                <span class="fw-tech">Webflow</span>
-                                <span class="fw-tech">Finsweet CMS</span>
-                                <span class="fw-tech">Local SEO</span>
-                            </div>
-                            <div class="fw-card__outcome">
-                                <div class="fw-outcome__label">Key result</div>
-                                <div class="fw-outcome__value">
-                                </div>
-                            </div>
-                            <a href="https://professorsai.org/" class="fw-card__cta" aria-label="View ProfessorAI case study">
-                                View Case Study
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2.5" aria-hidden="true">
-                                    <path d="M5 12h14M12 5l7 7-7 7" />
-                                </svg>
-                            </a>
-                        </div>
-                    </article>
-
                     <!-- PROJECT 5: Inventory Management (software/inventory) -->
-                    <article class="fw-card fw-card--software" data-category="software" data-subcategory="Cafe & Restaurant"
-                        data-index="4">
+                    <article class="fw-card fw-card--software" data-category="website" data-subcategory="cafe"
+                        data-index="4" onclick="window.open('https://parisian.in', '_blank')">
                         <div class="fw-card__visual">
                             <div class="fw-card__browser fw-card__browser--app">
                                 <div class="fw-card__browser-bar">
                                     <span class="fw-dot fw-dot--r"></span>
                                     <span class="fw-dot fw-dot--y"></span>
                                     <span class="fw-dot fw-dot--g"></span>
-                                    <div class="fw-card__url">Parisian — Inventory OS</div>
+                                    <div class="fw-card__url">Parisian.in</div>
                                 </div>
                                 <div class="fw-card__img-wrap">
                                     <img src="assets/images/3.jpeg"
@@ -2080,16 +1929,169 @@
                         </div>
                     </article>
 
+                    <!-- PROJECT 2: Gym (website/gym) -->
+                    <article class="fw-card" data-category="website" data-subcategory="cafe" data-index="1" onclick="window.open('https://ishkiya.org', '_blank')">
+                        <div class="fw-card__visual">
+                            <div class="fw-card__browser">
+                                <div class="fw-card__browser-bar">
+                                    <span class="fw-dot fw-dot--r"></span>
+                                    <span class="fw-dot fw-dot--y"></span>
+                                    <span class="fw-dot fw-dot--g"></span>
+                                    <div class="fw-card__url">Ishkiya.org</div>
+                                </div>
+                                <div class="fw-card__img-wrap">
+                                    <img src="assets/images/2.jpeg" alt="Ishikiya" loading="lazy"
+                                        class="fw-card__img" />
+                                    <div class="fw-card__img-overlay">
+                                        <span class="fw-card__view-label">View live site ↗</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="fw-card__outcome-badge">
+                                <span class="fw-outcome__icon">↑</span>
+                                <span>2.8× membership si</span>
+                            </div> -->
+                        </div>
+                        <div class="fw-card__info">
+                            <div class="fw-card__meta-top">
+                                <span class="fw-card__cat-pill fw-card__cat-pill--website">Cafe & Restaurant</span>
+                                <span class="fw-card__year">2025</span>
+                            </div>
+                            <h3 class="fw-card__title">Ishkiya</h3>
+                            <p class="fw-card__summary"></p>
+                            <div class="fw-card__tech-row">
+                                <span class="fw-tech">Next.js</span>
+                                <span class="fw-tech">GSAP</span>
+                                <span class="fw-tech">Calendly API</span>
+                            </div>
+                            <div class="fw-card__outcome">
+                                <div class="fw-outcome__label">Key result</div>
+                                <div class="fw-outcome__value">
+                                </div>
+                            </div>
+                            <a href="https://Ishkiya.org" class="fw-card__cta" aria-label="View Ishkiya case study">
+                                View Website
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" aria-hidden="true">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 3: Local Business / SkyHall Event Venue (website/local) -->
+                    <article class="fw-card" data-category="website" data-subcategory="restaurant" data-index="2" onclick="window.open('https://kakedihatti.com', '_blank')">
+                        <div class="fw-card__visual">
+                            <div class="fw-card__browser">
+                                <div class="fw-card__browser-bar">
+                                    <span class="fw-dot fw-dot--r"></span>
+                                    <span class="fw-dot fw-dot--y"></span>
+                                    <span class="fw-dot fw-dot--g"></span>
+                                    <div class="fw-card__url">kakedihatti.com</div>
+                                </div>
+                                <div class="fw-card__img-wrap">
+                                    <img src="assets/images/5.jpeg" alt="Kake Di Hatti venue website"
+                                        loading="lazy" class="fw-card__img" />
+                                    <div class="fw-card__img-overlay">
+                                        <span class="fw-card__view-label">View live site ↗</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fw-card__outcome-badge">
+                                <span class="fw-outcome__icon">↑</span>
+                                <span>+180% venue inquiries</span>
+                            </div>
+                        </div>
+                        <div class="fw-card__info">
+                            <div class="fw-card__meta-top">
+                                <span class="fw-card__cat-pill fw-card__cat-pill--website">Cafe & Restaurant</span>
+                                <span class="fw-card__year">2024</span>
+                            </div>
+                            <h3 class="fw-card__title">Kake Di Hatti</h3>
+                            <p class="fw-card__summary"></p>
+                            <div class="fw-card__tech-row">
+                                <span class="fw-tech">Webflow</span>
+                                <span class="fw-tech">Lottie</span>
+                                <span class="fw-tech">HubSpot CRM</span>
+                            </div>
+                            <div class="fw-card__outcome">
+                                <div class="fw-outcome__label">Key result</div>
+                                <div class="fw-outcome__value">
+                                    </div>
+                            </div>
+                            <a href="https://kakedihatti.com/" class="fw-card__cta" aria-label="View Kake Di Hatti case study">
+                                View Case Study
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" aria-hidden="true">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 4: Café (website/cafe) -->
+                    <article class="fw-card" data-category="software" data-subcategory="education" data-index="3" onclick="window.open('https://professorsai.org', '_blank')">
+                        <div class="fw-card__visual">
+                            <div class="fw-card__browser">
+                                <div class="fw-card__browser-bar">
+                                    <span class="fw-dot fw-dot--r"></span>
+                                    <span class="fw-dot fw-dot--y"></span>
+                                    <span class="fw-dot fw-dot--g"></span>
+                                    <div class="fw-card__url">ProfessorsAI.org</div>
+                                </div>
+                                <div class="fw-card__img-wrap">
+                                    <img src="assets/images/6.jpeg" alt="ProfessorAI brand website"
+                                        loading="lazy" class="fw-card__img" />
+                                    <div class="fw-card__img-overlay">
+                                        <span class="fw-card__view-label">View live site ↗</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fw-card__outcome-badge">
+                                <span class="fw-outcome__icon">↑</span>
+                                <span>+210% foot traffic from Google</span>
+                            </div>
+                        </div>
+                        <div class="fw-card__info">
+                            <div class="fw-card__meta-top">
+                                <span class="fw-card__cat-pill fw-card__cat-pill--website">Education</span>
+                                <span class="fw-card__year">2024</span>
+                            </div>
+                            <h3 class="fw-card__title">ProfessorAI</h3>
+                            <p class="fw-card__summary">
+                                </p>
+                            <div class="fw-card__tech-row">
+                                <span class="fw-tech">Webflow</span>
+                                <span class="fw-tech">Finsweet CMS</span>
+                                <span class="fw-tech">Local SEO</span>
+                            </div>
+                            <div class="fw-card__outcome">
+                                <div class="fw-outcome__label">Key result</div>
+                                <div class="fw-outcome__value">
+                                </div>
+                            </div>
+                            <a href="https://professorsai.org/" class="fw-card__cta" aria-label="View ProfessorAI case study">
+                                View Case Study
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" aria-hidden="true">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    
+
                     <!-- PROJECT 6: Intense Rigour (software/emr) -->
-                    <article class="fw-card fw-card--software" data-category="GYM" data-subcategory="emr"
-                        data-index="5">
+                    <article class="fw-card fw-card--software" data-category="website" data-subcategory="gym"
+                        data-index="5" onclick="window.open('https://intenserigourclub.com', '_blank')">
                         <div class="fw-card__visual">
                             <div class="fw-card__browser fw-card__browser--app">
                                 <div class="fw-card__browser-bar">
                                     <span class="fw-dot fw-dot--r"></span>
                                     <span class="fw-dot fw-dot--y"></span>
                                     <span class="fw-dot fw-dot--g"></span>
-                                    <div class="fw-card__url">Intense Rigour — Patient Records</div>
+                                    <div class="fw-card__url">IntenseRigourclub.com</div>
                                 </div>
                                 <div class="fw-card__img-wrap">
                                     <img src="assets/images/4.jpeg" alt="MedCore Intense Rigour system"
@@ -2132,15 +2134,15 @@
                     </article>
 
                     <!-- PROJECT 7: Order Management (software/orders) -->
-                    <article class="fw-card fw-card--software" data-category="software" data-subcategory="orders"
-                        data-index="6">
+                    <article class="fw-card fw-card--software" data-category="website" data-subcategory="gym"
+                        data-index="6" onclick="window.open('https://patelsfitnessclub.com', '_blank')">
                         <div class="fw-card__visual">
                             <div class="fw-card__browser fw-card__browser--app">
                                 <div class="fw-card__browser-bar">
                                     <span class="fw-dot fw-dot--r"></span>
                                     <span class="fw-dot fw-dot--y"></span>
                                     <span class="fw-dot fw-dot--g"></span>
-                                    <div class="fw-card__url">Patel's Fitness — Order Ops</div>
+                                    <div class="fw-card__url">Patel's Fitness</div>
                                 </div>
                                 <div class="fw-card__img-wrap">
                                     <img src="assets/images/7.jpeg"
@@ -2157,7 +2159,7 @@
                         </div>
                         <div class="fw-card__info">
                             <div class="fw-card__meta-top">
-                                <span class="fw-card__cat-pill fw-card__cat-pill--software">Order Management</span>
+                                <span class="fw-card__cat-pill fw-card__cat-pill--software">GYM</span>
                                 <span class="fw-card__year">2024</span>
                             </div>
                             <h3 class="fw-card__title">Patel's Fitness</h3>
@@ -2182,15 +2184,15 @@
                     </article>
 
                     <!-- PROJECT 8: Internal Dashboard / NeuroERP (software/dashboard) -->
-                    <article class="fw-card fw-card--software" data-category="software" data-subcategory="Inventory & Order Management"
-                        data-index="7" data-url="https://depot-tanzania.web.app/">
+                    <article class="fw-card fw-card--software" data-category="software" data-subcategory="inventory"
+                        data-index="7" onclick="window.open('https://depot-tanzania.web.app', '_blank')">
                         <div class="fw-card__visual">
                             <div class="fw-card__browser fw-card__browser--app">
                                 <div class="fw-card__browser-bar">
                                     <span class="fw-dot fw-dot--r"></span>
                                     <span class="fw-dot fw-dot--y"></span>
                                     <span class="fw-dot fw-dot--g"></span>
-                                    <div class="fw-card__url">NeuroERP — Sales Intelligence</div>
+                                    <div class="fw-card__url">NeuroERP</div>
                                 </div>
                                 <div class="fw-card__img-wrap">
                                     <img src="assets/images/8.jpeg"
@@ -3920,8 +3922,7 @@
                 window.open(card.dataset.url, "_blank"); // Opens in new tab
                 // window.location.href = card.dataset.url; // Opens in same tab
             </script>
-    });
-});
+
 </body>
 
 </html>
